@@ -63,5 +63,21 @@
     <footer>
       <p>&</p>
     </footer>
+    <script>
+      // Token verification logic
+      const correctToken = "app123";
+
+      // Show a pop-up asking for the token
+      const userToken = prompt("Please verify your token:");
+
+      // Check if the entered token is correct
+      if (userToken === correctToken) {
+        alert("Token verified successfully! Welcome.");
+      } else {
+        alert("Invalid token. Please try again.");
+        // Redirect or reload the page if the token is incorrect
+        window.location.reload(); // Reloads the page to ask for the token again
+      }
+    </script>
   </body>
 </html>
